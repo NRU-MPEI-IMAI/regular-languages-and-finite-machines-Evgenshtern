@@ -1,0 +1,27 @@
+digraph finite_state_machine {
+	rankdir=LR;
+	node [shape = doublecircle];  q1 q2 q4 q8 q9 q10 q11;
+	node [shape = circle];
+	"" [shape = none];"" [shape = none];
+	"" -> q1;
+	q1 -> q2 [label = "a"];
+    q1 -> q3 [label = "b"];
+    q2 -> q4 [label = "a"];
+    q2 -> q5 [label = "b"];
+    q3 -> q6 [label = "a"];
+    q3 -> q7 [label = "b"];
+    q4 -> q4 [label = "a"];
+    q4 -> q8 [label = "b"];
+    q5 -> q6 [label = "a"];
+    q5 -> q9 [label = "b"];
+    q6 -> q10 [label = "b"];
+    q7 -> q10 [label = "b"];
+    q8 -> q4 [label = "a"];
+    q8 -> q8 [label = "b"];
+    q9 -> q2 [label = "a"];
+    q9 -> q11 [label = "b"];
+    q10 -> q2 [label = "a"];
+    q10 -> q3 [label = "b"];
+    q11 -> q4 [label = "a"];
+    q11 -> q5 [label = "b"];
+}

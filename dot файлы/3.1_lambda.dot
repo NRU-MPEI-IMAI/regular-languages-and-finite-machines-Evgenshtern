@@ -1,0 +1,22 @@
+digraph finite_state_machine {
+	rankdir=LR;
+	node [shape = doublecircle];  12;
+	node [shape = circle];
+	"" [shape = none];"" [shape = none];
+	"" -> 1;
+	1 -> 11 [label = "lamda"];
+    1 -> 2 [label = "lamda"];
+	2 -> 3  [label = "lamda"];
+    3 -> 4  [label = "a"];
+    4 -> 5  [label = "b"];
+    5 -> 6  [label = "lamda"];
+    2 -> 7  [label = "lamda"];
+    7 -> 8  [label = "a"];
+    8 -> 9  [label = "b"];
+    9 -> 10 [label = "a"];
+    10 -> 6  [label = "lamda"];
+    6 -> 2  [label = "lamda"];
+    6 -> 11  [label = "lamda"];
+    11 -> 12  [label = "a"];
+}
+

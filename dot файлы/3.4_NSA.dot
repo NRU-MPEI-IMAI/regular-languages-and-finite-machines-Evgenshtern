@@ -1,0 +1,39 @@
+digraph finite_state_machine {
+	rankdir=LR;
+	node [shape = doublecircle];  19;
+	node [shape = circle];
+	"" [shape = none];"" [shape = none];
+	"" -> 0;
+	0 -> 1 [label = "lamda"];
+    0 -> 3 [label = "lamda"];
+    1 -> 2 [label = "b"];
+    2 -> 5 [label = "lamda"];
+    3 -> 4 [label = "c"];
+    4 -> 5 [label = "lamda"];
+    5 -> 19 [label = "lamda"];
+
+    5 -> 6 [label = "lamda"];
+    6 -> 18 [label = "lamda"];
+    6 -> 13 [label = "lamda"];
+    6 -> 7 [label = "lamda"];
+
+    7 -> 11 [label = "lamda"];
+    7 -> 8 [label = "lamda"];
+
+    8 -> 9 [label = "a"];
+    9 -> 10 [label = "b"];
+    10 -> 8 [label = "lamda"];
+    10 -> 11 [label = "lamda"];
+    11 -> 12 [label = "c"];
+    12 -> 18 [label = "lamda"];
+
+    13 -> 17 [label = "lamda"];
+    13 -> 14 [label = "lamda"];
+    14 -> 15 [label = "b"];
+    15 -> 16 [label = "a"];
+    16 -> 14 [label = "lamda"];
+    16 -> 17 [label = "lamda"];
+    17 -> 18 [label = "lamda"];
+
+    18 -> 19 [label = "lamda"];
+}

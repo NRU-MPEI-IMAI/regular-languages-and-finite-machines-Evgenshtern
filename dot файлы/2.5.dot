@@ -1,0 +1,76 @@
+digraph finite_state_machine{
+	rankdir=LR; 
+	node [shape = none]; "";
+	node [shape = doublecircle] q4q7, q4q8, q4q9, q4q10, q4q11; 
+	node [shape = circle];
+	"" -> q1q6;
+	q1q6 -> q2q10 [label = "a"];
+    q1q7 -> q2q11 [label = "a"];
+    q1q8 -> q2q9 [label = "a"];
+    q1q9 -> q2q8 [label = "a"];
+    q1q10 -> q2q6 [label = "a"];
+    q1q11 -> q2q7 [label = "a"];
+
+	q1q6 -> q2q7[label = "b"];
+    q1q7 -> q2q8 [label = "b"];
+    q1q8 -> q2q6 [label = "b"];
+    q1q9 -> q2q10 [label = "b"];
+    q1q10 -> q2q11 [label = "b"];
+    q1q11 -> q2q9 [label = "b"];
+
+    q2q6 -> q3q10 [label = "a"];
+    q2q7 -> q3q11 [label = "a"];
+    q2q8 -> q3q9 [label = "a"];
+    q2q9 -> q3q8 [label = "a"];
+    q2q10 -> q3q6 [label = "a"];
+    q2q11 -> q3q7 [label = "a"];
+
+    q2q6 -> q3q7[label = "b"];
+    q2q7 -> q3q8 [label = "b"];
+    q2q8 -> q3q6 [label = "b"];
+    q2q9 -> q3q10 [label = "b"];
+    q2q10 -> q3q11 [label = "b"];
+    q2q11 -> q3q9 [label = "b"];
+
+    q3q6 -> q4q10 [label = "a"];
+    q3q7 -> q4q11 [label = "a"];
+    q3q8 -> q4q9 [label = "a"];
+    q3q9 -> q4q8 [label = "a"];
+    q3q10 -> q4q6 [label = "a"];
+    q3q11 -> q4q7 [label = "a"];
+
+    q3q6 -> q4q7[label = "b"];
+    q3q7 -> q4q8 [label = "b"];
+    q3q8 -> q4q6 [label = "b"];
+    q3q9 -> q4q10 [label = "b"];
+    q3q10 -> q4q11 [label = "b"];
+    q3q11 -> q4q9 [label = "b"];
+
+    q4q6 -> q5q10 [label = "a"];
+    q4q7 -> q5q11 [label = "a"];
+    q4q8 -> q5q9 [label = "a"];
+    q4q9 -> q5q8 [label = "a"];
+    q4q10 -> q5q6 [label = "a"];
+    q4q11 -> q5q7 [label = "a"];
+
+    q4q6 -> q5q7[label = "b"];
+    q4q7 -> q5q8 [label = "b"];
+    q4q8 -> q5q6 [label = "b"];
+    q4q9 -> q5q10 [label = "b"];
+    q4q10 -> q5q11 [label = "b"];
+    q4q11 -> q5q9 [label = "b"];
+
+    q5q6 -> q4q10 [label = "a"];
+    q5q7 -> q4q11 [label = "a"];
+    q5q8 -> q4q9 [label = "a"];
+    q5q9 -> q4q8 [label = "a"];
+    q5q10 -> q4q6 [label = "a"];
+    q5q11 -> q4q7 [label = "a"];
+
+    q5q6 -> q4q7[label = "b"];
+    q5q7 -> q4q8 [label = "b"];
+    q5q8 -> q4q6 [label = "b"];
+    q5q9 -> q4q10 [label = "b"];
+    q5q10 -> q4q11 [label = "b"];
+    q5q11 -> q4q9 [label = "b"];
+}
